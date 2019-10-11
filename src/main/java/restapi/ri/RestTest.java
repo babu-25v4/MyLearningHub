@@ -10,13 +10,17 @@ public class RestTest {
 
 	public static void main(String[] args) {
 		
-		generateSMSShortURLClickEvents("","","http://ri2b.rsysi.com/HGhUtc6k");
+		String arr [] = {"", "", "", ""};
 		
-//		generateSMSShortURLClickEvents("","","https://qa82.ri2.mycampaign.com/pub/acc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGzb1FN4cizgbqPUtb9JkFUmmIzfzc8IdgRjeWuoYdnAthzbJLi8ljgpzdcF2CVXtpKX%3DSCRSWBCT&_ei_=EkZxRNOJ-vWdFjt_xLs93M0qSyepZLyDXhW3y8eCVzNxZSMduuta8SbpFt_cxxIhgRramauQn_GK5387y9Q-twVqXX4FQZlm4VIvM2Hzk4v2i-a7YPmvi3v7DMjD9OuZmyfiHfqwFg.Jg%3D%3D");
-						
+		
+		RestLogin.restLogin("babuipush", "Welcome1234%", "password");
+		
+		
+//		generateSMSShortURLClickEvents("","","http://ri2b.rsysi.com/HGhUtc6k");		
+//		generateSMSShortURLClickEvents("","","https://qa82.ri2.mycampaign.com/pub/acc?_ri_=X0Gzc2X%3DYQpglLjHJlTQGzb1FN4cizgbqPUtb9JkFUmmIzfzc8IdgRjeWuoYdnAthzbJLi8ljgpzdcF2CVXtpKX%3DSCRSWBCT&_ei_=EkZxRNOJ-vWdFjt_xLs93M0qSyepZLyDXhW3y8eCVzNxZSMduuta8SbpFt_cxxIhgRramauQn_GK5387y9Q-twVqXX4FQZlm4VIvM2Hzk4v2i-a7YPmvi3v7DMjD9OuZmyfiHfqwFg.Jg%3D%3D");						
 	}
 	
-	
+		
 	public static void generateSMSShortURLClickEvents(String testCaseDescription, String expectedStatuscode, String smsShortURL){
 
 		RequestSpecification request = RestAssured.given();
